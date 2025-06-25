@@ -44,7 +44,7 @@ class UserSeeder extends Seeder
         $superAdminUser = User::create([
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
-            'password' => bcrypt('password'),
+            'password' => bcrypt('admin123'),
         ]);
 
         $superAdminRole = Role::where('name', 'super-admin')->first();
@@ -58,7 +58,7 @@ class UserSeeder extends Seeder
         $cashierUser = User::create([
             'name' => 'Cashier',
             'email' => 'cashier@gmail.com',
-            'password' => bcrypt('password'),
+            'password' => bcrypt('cashier123'),
         ]);
 
         $transactionsPermission = Permission::where('name', 'transactions-access')->first();
@@ -72,7 +72,7 @@ class UserSeeder extends Seeder
         $kepalaSekolahUser = User::create([
             'name' => 'Kepala Sekolah',
             'email' => 'kepala.sekolah@gmail.com', 
-            'password' => bcrypt('password'), 
+            'password' => bcrypt('kepala123'), 
         ]);
 
         $kepalaSekolahRole = Role::where('name', 'kepala-sekolah')->first();
@@ -86,7 +86,7 @@ class UserSeeder extends Seeder
         $kepalaKoperasiUser = User::create([
             'name' => 'Kepala Koperasi',
             'email' => 'kepala.koperasi@gmail.com', 
-            'password' => bcrypt('password'), 
+            'password' => bcrypt('koperasi123'), 
         ]);
 
         $kepalaKoperasiRole = Role::where('name', 'kepala-koperasi')->first();
